@@ -1,0 +1,222 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\usepackage{xeCJK}
+\usepackage{fontspec, xunicode, xltxtra}  
+\setCJKfamilyfont{song}{SimSun}                             %宋体 song  
+\newcommand{\song}{\CJKfamily{song}}                        % 宋体   (Windows自带simsun.ttf)  
+\setCJKfamilyfont{xs}{NSimSun}                              %新宋体 xs  
+\newcommand{\xs}{\CJKfamily{xs}}  
+\setCJKfamilyfont{fs}{FangSong_GB2312}                      %仿宋2312 fs  
+\newcommand{\fs}{\CJKfamily{fs}}                            %仿宋体 (Windows自带simfs.ttf)  
+\setCJKfamilyfont{kai}{KaiTi_GB2312}                        %楷体2312  kai  
+\newcommand{\kai}{\CJKfamily{kai}}                            
+\setCJKfamilyfont{yh}{Microsoft YaHei}                    %微软雅黑 yh  
+\newcommand{\yh}{\CJKfamily{yh}}  
+\setCJKfamilyfont{hei}{SimHei}                                    %黑体  hei  
+\newcommand{\hei}{\CJKfamily{hei}}                          % 黑体   (Windows自带simhei.ttf)  
+\setCJKfamilyfont{msunicode}{Arial Unicode MS}            %Arial Unicode MS: msunicode  
+\newcommand{\msunicode}{\CJKfamily{msunicode}}  
+\setCJKfamilyfont{li}{LiSu}                                            %隶书  li  
+\newcommand{\li}{\CJKfamily{li}}  
+\setCJKfamilyfont{yy}{YouYuan}                             %幼圆  yy  
+\newcommand{\yy}{\CJKfamily{yy}}  
+\setCJKfamilyfont{xm}{MingLiU}                                        %细明体  xm  
+\newcommand{\xm}{\CJKfamily{xm}}  
+\setCJKfamilyfont{xxm}{PMingLiU}                             %新细明体  xxm  
+\newcommand{\xxm}{\CJKfamily{xxm}}  
+
+\setCJKfamilyfont{hwsong}{STSong}                            %华文宋体  hwsong  
+\newcommand{\hwsong}{\CJKfamily{hwsong}}  
+\setCJKfamilyfont{hwzs}{STZhongsong}                        %华文中宋  hwzs  
+\newcommand{\hwzs}{\CJKfamily{hwzs}}  
+\setCJKfamilyfont{hwfs}{STFangsong}                            %华文仿宋  hwfs  
+\newcommand{\hwfs}{\CJKfamily{hwfs}}  
+\setCJKfamilyfont{hwxh}{STXihei}                                %华文细黑  hwxh  
+\newcommand{\hwxh}{\CJKfamily{hwxh}}  
+\setCJKfamilyfont{hwl}{STLiti}                                        %华文隶书  hwl  
+\newcommand{\hwl}{\CJKfamily{hwl}}  
+\setCJKfamilyfont{hwxw}{STXinwei}                                %华文新魏  hwxw  
+\newcommand{\hwxw}{\CJKfamily{hwxw}}  
+\setCJKfamilyfont{hwk}{STKaiti}                                    %华文楷体  hwk  
+\newcommand{\hwk}{\CJKfamily{hwk}}  
+\setCJKfamilyfont{hwxk}{STXingkai}                            %华文行楷  hwxk  
+\newcommand{\hwxk}{\CJKfamily{hwxk}}  
+\setCJKfamilyfont{hwcy}{STCaiyun}                                 %华文彩云 hwcy  
+\newcommand{\hwcy}{\CJKfamily{hwcy}}  
+\setCJKfamilyfont{hwhp}{STHupo}                                 %华文琥珀   hwhp  
+\newcommand{\hwhp}{\CJKfamily{hwhp}}  
+
+\setCJKfamilyfont{fzsong}{Simsun (Founder Extended)}     %方正宋体超大字符集   fzsong  
+\newcommand{\fzsong}{\CJKfamily{fzsong}}  
+\setCJKfamilyfont{fzyao}{FZYaoTi}                                    %方正姚体  fzy  
+\newcommand{\fzyao}{\CJKfamily{fzyao}}  
+\setCJKfamilyfont{fzshu}{FZShuTi}                                    %方正舒体 fzshu  
+\newcommand{\fzshu}{\CJKfamily{fzshu}}  
+
+\setCJKfamilyfont{asong}{Adobe Song Std}                        %Adobe 宋体  asong  
+\newcommand{\asong}{\CJKfamily{asong}}  
+\setCJKfamilyfont{ahei}{Adobe Heiti Std}                            %Adobe 黑体  ahei  
+\newcommand{\ahei}{\CJKfamily{ahei}}  
+\setCJKfamilyfont{akai}{Adobe Kaiti Std}                            %Adobe 楷体  akai  
+\newcommand{\akai}{\CJKfamily{akai}}  
+
+%------------------------------设置字体大小------------------------%  
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     %初号  
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} %小初号  
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      %一号  
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      %二号  
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  %小二号  
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}  %三号  
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}%     四号  
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  %小四号  
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    %五号  
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   %小五号  
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  %六号  
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    %七号  
+% Command for printing skill progress bars
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Full Stack}\\\textbf{Dev},
+        \textbf{Relational/}\\\textbf{Document}\\\textbf{Databases},
+        \textbf{~~~~OOP~~~~~},
+        \textbf{Mobile}\\\textbf{Dev},
+        \textbf{Machine}\\\textbf{Learning},
+        \textbf{Test}\\\textbf{~~Automation~~},
+        \textbf{Statistical}\\\textbf{Analysis}
+    }
+}
+
+\interests{{Dev Ops/4.5},{Test Automation/5},{Data Science/6},{Software Engineering/6}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+
+
+\cvname{\hei 令平子} % Your name
+\cvjobtitle{ 数据科学家， \\ 全栈开发人员} % Job title/career
+
+\cvlinkedin{https://linkedin.com/in/hsgadgil}
+\cvnumberphone{+1 507 061 4696} % Phone number
+\cvsite{http://www.hgadgil.com/} % Personal website
+\cvmail{linpions@qq.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{Expected \\ Dec 2016}
+        {MSc., Computer Science}
+        {\href{http://www.uoguelph.ca/}{University of Guelph}}
+        {Guelph, Ontario, Canada}
+        {Current GPA: 3.7/4, 83\%}
+	\twentyitem
+    	{2009 - 2013}
+        {BEng., Computer Engineering}
+        {\href{http://www.unipune.ac.in/}{University of Pune}}
+        {Pune, Maharashtra, India}
+        {GPA: 4.0, First Class with Distinction}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+
+\section{Research}
+\begin{twenty}
+	\twentyitem
+    	{2015 - 2016}
+        {Graduate Research Assistant}
+        {\href{http://www.uoguelph.ca/}{University of Guelph}}
+        {}
+        {
+        {\begin{itemize}
+        \item Performed classification using Support Vector Machine and multivariate regression analyses using Logistic Regression
+        \item Proposed a novel method to reliably integrate large, noisy datasets. Evaluated the method on datasets containing six million records
+        \item A paper describing the method and preliminary results is accepted for publication in the proceedings of the IEEE International Conference of Data Mining 2016
+    \end{itemize}}
+        }
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{Sep 2015 - \\May 2016}
+        {Co-Founder \& Full Stack Developer}
+        {\href{http://www.localxchange.ca/}{LocalXChange Inc.}}
+        {}
+        {
+        {\begin{itemize}
+        \item In a team of two, won \$8,000 in funding from The Hub incubator (CBaSE, University of Guelph) to kick start a startup venture
+        \item In a team of three, built a prototype hyperlocal content platform. The goal was to deliver hyperlocal news, events and other content from community organizations to local users
+        \item Built hybrid mobile and web apps using Node.js, Ionic, AngularJS and MongoDB. Performed automated testing using Selenium.
+        \item Met with city officials, including the Mayor, and university executives to marketing \& business strategies for the platform 
+    \end{itemize}}
+        }
+        
+    \twentyitem
+   		{Sept 2015 - \\ Present}
+        {Graduate Teaching Assistant}
+        {\href{http://www.uoguelph.ca}{University of Guelph}}
+        {}
+        {
+        {\begin{itemize}
+        \item TA for CIS*2430 (OOP), CIS*4150 (Software Reliability \& Testing) and CIS*3530 (Database Systems \& Concepts) courses
+    \end{itemize}}
+        }
+        
+     \twentyitem
+   		{Dec 2013 - \\ Apr 2015}
+        {Test Automation Engineer}
+        {\href{http://www.synechron.com/}{Synechron}}
+        {}
+        {
+        \begin{itemize}
+        \item Developed a \textit{Keyword Driven} and \textit{Behavior Driven} test automation framework for \href{https://www.microsoft.com/en-ca/dynamics/crm.aspx}{Microsoft Dynamics CRM}. Wrote an efficient recursive function to search within multi-level nested frames, reducing development time by several weeks. Won SPOT award {\includegraphics[scale=0.05]{img/trophy.png}}
+        
+        \textit{My work opened up a new position in the organization, enabling it to earn additional revenue}
+        \item Involved in development of a Coded UI test automation framework for \href{https://www.microsoft.com/en-ca/dynamics/erp-ax-overview.aspx}{Microsoft Dynamics AX} in C\#
+        \item Involved in manual testing for \href{http://www.fico.com/en/products/fico-blaze-advisor-decision-rules-management-system}{FICO Blaze Advisor}. Participated in standup meetings and Three Amigos sessions with onshore/offshore developers and BAs. Responsible for sending daily status reports and testing user stories. Used JIRA and Quality Center for defect reporting, and Quick Test Professional for executing automated test cases
+    \end{itemize}
+    	}
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\end{document} 
